@@ -1,0 +1,48 @@
+# fetch all tasks
+GET http://localhost:3000/api/v1/tasks
+
+###
+GET http://localhost:3000/api/v1/tasks/67060001d94c7c193e6e314f
+
+###
+
+POST http://localhost:3000/api/v1/tasks
+content-type: application/json
+
+{
+    "task": "NEW TASK 3",
+    "hour":30,
+    "type": "good"
+}
+
+###
+PUT http://localhost:3000/api/v1/tasks/670722aa03549c4c482cd4ba
+content-type: application/json
+
+{
+    "task": "updated Task Title 1",
+    "hour": 45,
+    "type": "bad"
+}
+###
+
+PUT http://localhost:3000/api/v1/tasks/6706fee1ea46ab037bc7acb1
+content-type: application/json
+
+{
+    "task": "updated Task Title",
+    "hour": 30,
+    "type": "good"
+}
+
+###
+PATCH http://localhost:3000/api/v1/tasks/67072495846bc6bd8906d42a
+content-type: application/json
+
+{
+    
+    "hour": 200
+}
+
+###
+DELETE http://localhost:3000/api/v1/tasks/670724f1846bc6bd8906d42d
